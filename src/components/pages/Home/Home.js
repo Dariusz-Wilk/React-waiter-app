@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux';
 import Table from '../../views/Table/Table';
+import { getTables } from '../../../redux/tablesReducer';
 
 const Home = () => {
-	const allTables = useSelector(state => state.tables);
-	console.log(allTables);
+	const allTables = useSelector(getTables);
 	return (
 		<div>
 			{allTables.map(table => (
