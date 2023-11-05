@@ -1,6 +1,7 @@
 {
 	"tables": [
 		{
+			"tableNum": "Table 1",
 			"id": "1",
 			"status": "Busy",
 			"peopleAmount": "2",
@@ -8,6 +9,7 @@
 			"bill": "20"
 		},
 		{
+			"tableNum": "Table 2",
 			"id": "2",
 			"status": "Free",
 			"peopleAmount": 0,
@@ -15,6 +17,7 @@
 			"bill": 0
 		},
 		{
+			"tableNum": "Table 3",
 			"id": "3",
 			"status": "Busy",
 			"peopleAmount": 2,
@@ -22,6 +25,7 @@
 			"bill": 45
 		},
 		{
+			"tableNum": "Table 4",
 			"id": "4",
 			"status": "Cleaning",
 			"peopleAmount": 0,
