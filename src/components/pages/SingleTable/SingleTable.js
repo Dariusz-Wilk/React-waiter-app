@@ -1,4 +1,4 @@
-import { Navigate, useParams } from 'react-router-dom';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
@@ -33,7 +33,9 @@ const SingleTable = () => {
 						</p>
 					</Card.Text>
 
-					<Button variant="primary">Edit</Button>
+					<Link to={`/table/edit/${id}`}>
+						<Button variant="primary">Edit</Button>
+					</Link>
 				</Card.Body>
 			</Card>
 		</div>
