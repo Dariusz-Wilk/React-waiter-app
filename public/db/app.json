@@ -34,9 +34,21 @@
 		}
 	],
 	"statuses": [
-		{ "status": "Busy", "id": 1 },
-		{ "status": "Free", "id": 2 },
-		{ "status": "Reserved", "id": 3 },
-		{ "status": "Cleaning", "id": 4 }
+		{
+			"status": "Busy",
+			"id": 1
+		},
+		{
+			"status": "Free",
+			"id": 2
+		},
+		{
+			"status": "Reserved",
+			"id": 3
+		},
+		{
+			"status": "Cleaning",
+			"id": 4
+		}
 	]
 }

@@ -19,7 +19,6 @@ const App = () => {
 		dispatch(fetchStatuses());
 	}, [dispatch]);
 
-	useEffect(() => dispatch(fetchStatuses()), [dispatch]);
 	return (
 		<Container>
 			<Header />

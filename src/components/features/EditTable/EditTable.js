@@ -1,13 +1,15 @@
 import { Card, Form, Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { getTablesById } from '../../../redux/tablesReducer';
 import styles from './EditTable.module.scss';
 import { getAllStatuses } from '../../../redux/statusesReducer';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { editTableRequest } from '../../../redux/tablesReducer';
 
 const EditTable = () => {
+	const dispatch = useDispatch();
 	const { id } = useParams();
 	const table = useSelector(state => getTablesById(state, id));
 	const allStatuses = useSelector(getAllStatuses);
@@ -18,9 +20,11 @@ const EditTable = () => {
 		peopleAmount: table.peopleAmount,
 		maxPeopleAmount: table.maxPeopleAmount,
 		bill: table.bill,
+		id,
 	});
 
 	const handleSubmit = () => {
+		dispatch(editTableRequest(formData, id));
 		navigate('/');
 	};
 	return (
